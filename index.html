@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Splash Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* This CSS is assumed to be provided by your starting point */
+        /* For completeness, I'll include a basic style.css content structure */
+        html {
+            font-size: 10px; /* Base font size */
+        }
+
+        body {
+            width: 70%;
+            min-width: 800px;
+            margin: 0 auto;
+            background-color: #66CCCC; /* Light blue background */
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        header, article, aside, footer {
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 0 20px 0;
+            border-radius: 5px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 60px; /* Adjust as needed for the logo */
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 4rem; /* 40px */
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 3rem; /* 30px */
+        }
+
+        p, li {
+            font-size: 1.6rem; /* 16px */
+            line-height: 1.5;
+        }
+
+        /* Further info section */
+        .further-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .further-info li {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .further-info a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .further-info img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Remove extra space below image */
+            margin: 0 auto 10px auto;
+        }
+
+        /* Red panda section */
+        .red-panda {
+            text-align: center;
+        }
+
+        .red-panda img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="firefox_logo-only_RGB.png" alt="Firefox logo" width="400">
+        <h1>Mozilla</h1>
+    </header>
+
+    <main>
+        <article>
+            <iframe width="400" height="225" src="http://googleusercontent.com/youtube.com/embed/0" frameborder="0" allowfullscreen></iframe>
+            <p>The Mozilla project is a global community of technologists, thinkers, and builders working together to keep the Internet alive and accessible, so people everywhere can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to the individual growth and the future of our collective digital life.</p>
+
+            <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide our pursuit of a healthy Internet for all.</p>
+        </article>
+
+        <aside class="further-info">
+            <h2>Further information</h2>
+            <p>Find more information about Mozilla and how to get involved by visiting the links below:</p>
+
+            <ul>
+                <li><a href="https://www.mozilla.org/en-US/firefox/new/"><img src="firefox_logo-only_RGB.png" alt="Firefox browser icon" width="400"> Firefox</a></li>
+                <li><a href="https://www.mozilla.org/en-US/contribute/"><img src="mozilla-dinosaur-head.png" alt="Mozilla dinosaur head logo" width="400"> Contribute</a></li>
+                <li><a href="https://addons.mozilla.org/"><img src="firefox-addons.jpg" alt="Firefox Add-ons icon" width="400"> Add-ons</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/"><img src="mdn.svg" alt="MDN Web Docs logo" width="400"> MDN Web Docs</a></li>
+            </ul>
+        </aside>
+
+        <div class="red-panda">
+            <img src="red-panda-1200px.jpg" alt="Red Panda" width="1200">
+        </div>
+    </main>
+
+    <footer>
+        <p>©Mozilla 2023</p>
+    </footer>
+</body>
+</html>
